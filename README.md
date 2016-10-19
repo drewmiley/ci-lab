@@ -143,7 +143,7 @@ git config --global user.name "<github_username>"
 2. We'll use a tool called 'eslint'.  For starters, we need to make this tool available by declaring it as a dependency of our project.  We could do this by hand-editing `package.json`, but a faster and more reliable way is with an npm command:
 
     ```
-    npm install eslint --save
+    npm install eslint@3.7.1 --save
     ```
 
     This command installs the module to `node_modules` and the `--save` flag adds an entry to your package.json.
@@ -151,7 +151,7 @@ git config --global user.name "<github_username>"
 3. We'll also need to supply some stylistic rules for eslint to check.  Style is, after all, a matter of taste, and you're free to configure the style you want for your team.  However, configuring all rules from scratch would take ages, so let's use some rules from Google to get started.  Install another dependency:
 
     ```
-    npm install eslint-config-google --save
+    npm install eslint-config-google@0.6.0 --save
     ```
 
 4. Now let's add some custom rules.  Create a file in your local repository root directory called .eslintrc.json.  Give it the following content (don't worry about understanding what these rules mean; not important for this lab):
