@@ -154,7 +154,7 @@ git config --global user.name "<github_username>"
     npm install eslint-config-google@0.6.0 --save
     ```
 
-4. Now let's add some custom rules.  Create a file in your local repository root directory called .eslintrc.json.  Give it the following content (don't worry about understanding what these rules mean; not important for this lab):
+4. Now let's add some custom rules.  Create a file in your local repository root directory called `.eslintrc.json`.  Give it the following content (don't worry about understanding what these rules mean; not important for this lab):
 
     ```
     {
@@ -176,7 +176,7 @@ git config --global user.name "<github_username>"
     "test": "eslint site/*.js && mocha site/spec/*.spec.js",
     ```
 
-6. Now try running `npm test` again.  There should be linting failures.  Run the Git commands again to commit and push to GitHub.  See that CircleCI fails your build again.
+6. Now try running `npm test` again.  There should be linting failures.  Run the Git commands again to commit and push to GitHub (you'll have to run `git add .eslintrc.json` first as this is a new file).  See that CircleCI fails your build again.
 
 7. Now fix the linting problems locally - you'll have to read each problem carefully to determine what needs fixing.
 
