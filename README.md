@@ -166,6 +166,9 @@ git config --global user.name "<github_username>"
         "rules": {
           "linebreak-style": 0,
           "one-var": 0
+        },
+        "parserOptions": {
+          "ecmaVersion": 6
         }
     }
     ```
